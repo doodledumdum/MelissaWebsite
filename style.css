@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(162, 195, 255);
+    background-color: #DEE9FF;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
@@ -25,6 +25,10 @@ a:active {
 }
 a:hover {
   color: #311500;
+}
+
+.navtext {
+  padding-top: 0.7em;
 }
 
 .link {
@@ -91,7 +95,7 @@ a:hover {
   
   .header li a:hover,
   .header .menu-btn:hover {
-    background-color: #fff8ca;
+    background-color: #fff4d4;
   }
   
   .header .logo {
@@ -215,3 +219,37 @@ a:hover {
     }
   }
 /* end nav baar   */
+
+/* foooter */
+.foot {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(111,58,82,.1);
+  width: 100%;
+  border-radius: 2px;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  text-align: center;
+  padding: 1em;
+}
+.socialist {
+  padding: 20px 20px;
+}
+
+.foot li a {
+  display: block;
+  padding: 20px 20px;
+  /* border-right: 1px solid #f4f4f4; */
+  text-decoration: none;
+  align-items: center;
+  
+}
+
+.foot  a:hover,
+.foot .menu-btn:hover {
+  background-color: #fff4d4;
+}
+
+/* footer end */
