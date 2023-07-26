@@ -1,0 +1,73 @@
+<!-- eyecatch -->
+<div class="eyecatch">
+    <div class="eye" id="img-load"></div>
+  </div>
+  <!-- eyeycatch end -->
+  
+      <footer>
+        <nav>
+          <div class="foot">
+            <p>
+            <a href="https://www.instagram.com/melissa_bryant_id/" target="_blank" rel="noopener noreferrer" class="socialist">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100070388983079" target="_blank" rel="noopener noreferrer" class="socialist">Facebook</a>
+          </p>
+          </div>
+        </nav>
+      </footer>
+  
+      <script>
+        // Define your images here
+        var images = [
+          "img/Alaska.jpg",
+          "img/Alabama.jpg",
+          "img/Arkansas.jpg",
+          "img/Arizona.jpg",
+          "img/BabyCockatiel.jpg",
+          "img/Boatmance.jpg",
+          "img/Connecticut.jpg",
+          "img/Deleware.jpg",
+          "img/Florida.jpg",
+          "img/Georgia.jpg",
+          "img/Hawii.jpg",
+          "img/Idaho.jpg",
+          "img/Illinois.jpg",
+          "img/acrylics/farm.jpg",
+          "img/acrylics/auroraborealis.jpg",
+          "img/acrylics/mtwhatsit.jpg",
+          "img/Massachusetts.jpg",
+        ];
+      
+        // Define corresponding paragraphs here
+        var paragraphs = [
+          "Alaska State Bird and Flower | Willow Ptarmigan and Alpine Forget Me Not",
+          "Alabama State Bird and Flower | Yellowhammer and Camellia",
+          "Arkansas State Bird and Flower | Mockingbird and Apple Blossom",
+          "Arizona State Bird and Flower | Cactus Wren and Saguaro Cactus Bloom",
+          "Young Cockatiel",
+          "Romantic Boat Ride",
+          "Connecticut State Bird and Flower | Robin and Mountain Laurel",
+          "Delaware State Bird and Flower | Blue Hen Chicken and Peach Blossom",
+          "Florida State Bird and Flower | Mockingbird and Orange Blossom",
+          "Georgia State Bird and Flower | Brown Thrasher and Cherokee Rose",
+          "Hawaii State Bird and Flower | Nene and Pua Aloalo",
+          "Idaho State Bird and Flower | Mountain Bluebird and Syringa",
+          "Illinois State Bird and Flower | Cardinal and Purple Violet",
+          "Farm at Night",
+          "Northern Lights",
+          "Mountain Lake",
+          "Massachusetts State Bird and Flower | Chickadee and Trailing-Arbutus",
+        ];
+      
+        // This chooses a random number from all available image indices
+        var randomIndex = Math.floor(Math.random() * images.length);
+      
+        // Make the URL into a proper image tag
+        var image = "<img src='" + images[randomIndex] + "'>";
+      
+        // Get the corresponding paragraph
+        var paragraph = "<p>" + paragraphs[randomIndex] + "</p>";
+      
+        // Append the image and paragraph to the div
+        var container = document.getElementById("img-load");
+        container.innerHTML = image + paragraph;
+      </script>

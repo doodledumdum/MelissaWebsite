@@ -255,9 +255,19 @@ a:hover {
 
 .ec-item {
   /* background-color: rgb(9, 255, 0); */
-  max-width: 30em;
-  padding: 2em;
+  max-width: 60%;
+  padding: 1em;
   /* padding: 3em; */
+}
+
+.title {
+  font-weight: bold;
+  font-style: normal;
+  text-align: center;
+}
+
+.desc {
+  font-style: oblique;
 }
 
 .state-img {
@@ -285,6 +295,15 @@ img {
   /* padding-top: 3em; */
 }
 
+.line {
+  background-color: #00000088;
+  width: 90em;
+  height: 0.2em;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
 .usa {
   max-width: 30em;
   text-align: center;
@@ -292,14 +311,35 @@ img {
   background-color: #ffffff88;
 }
 
-.labelle {
-  font-weight: bold;
-}
-
 .linky a:hover {
   background-color: #fff4d4;
 }
+
+.comm {
+  background-color: #ffffff88;
+  max-width: 30em;
+}
 /* link end */
+
+/* gallery */
+.big-mama {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  align-items: center;
+}
+
+.lil-mama {
+  max-width: 30em;
+  padding: 1em;
+  font-style: italic;
+}
+
+.diff {
+  text-align: justify;
+}
+/* gallery end */
 
 /* foooter */
 .foot {

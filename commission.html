@@ -15,7 +15,7 @@
           <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
           <a href="index.html"><p class="title">The Art of Melissa Bryant</p></a>
           <ul class="menu">
-            <li class="navtext"><a href="store.html">Store</a></li>
+            <li class="navtext"><a href="https://society6.com/melissabryantid" target="_blank" rel="noopener noreferrer">Store</a></li>
             <li class="navtext"><a href="commission.html">Commissions</a></li>
             <li class="navtext"><a href="collections.html">Collections</a></li>
             <li class="navtext"><a href="contact.html">Contact</a></li>
@@ -25,70 +25,133 @@
         <!-- nav end -->
     </header>
 
- 
+    <p>The Art of Melissa Bryant</p>
+    <br>
+    <br>
+    <h1>Commission</h1>
+<!-- eyecatch -->
+<div id="eyecatchContainer">
 
-    <!-- eyecatch -->
-<div class="eyecatch">
-    <div class="eye" id="img-load"></div>
+    <div class="eyecatch idaho">
+      <div class="ec-item">
+        <img src="img/Idaho.jpg" alt="Idaho state bird and flower" class="state-img">
+      </div>
+
+      <div class="ec-item">
+        <h2 class="title">Interested in a Commission?</h2>
+        <p class="desc">Email for info on pricing, examples, and terms of service.</p>
+        <div class="linky">
+            <a href="mailto:melissabryantid@gmail.com" target="_blank">
+            <div class="usa">
+                <p class="title">Inquire Here</p>
+            </div>
+            </a>
+    </div>
+    </div>
 </div>
-    <!-- eyeycatch end -->
-
-    <footer>
-      <nav>
-        <div class="foot">
-          <p>
-          <a href="https://www.instagram.com/melissa_bryant_id/" target="_blank" rel="noopener noreferrer" class="socialist">Instagram</a>
-          <a href="https://www.facebook.com/profile.php?id=100070388983079" target="_blank" rel="noopener noreferrer" class="socialist">Facebook</a>
-        </p>
-        </div>
-      </nav>
-    </footer>
     
-    <script>
-        // Define your images here
-        var images = [
-          "img/Idaho.jpg",
-          "img/Connecticut.jpg",
-          "img/Florida.jpg"
-        ];
+    <div class="eyecatch Connecticut">
+        <div class="ec-item">
+          <img src="img/Louisiana.jpg" alt="Louisisana state bird and flower" class="state-img">
+        </div>
+        <div class="ec-item">
+            <h2 class="title">Interested in a Commission?</h2>
+            <p class="desc">Email for info on pricing, examples, and terms of service.</p>
+            <div class="linky">
+                <a href="mailto:melissabryantid@gmail.com" target="_blank">
+                <div class="usa">
+                    <p class="title">Inquire Here</p>
+                </div>
+                </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class="eyecatch hawaii">
+        <div class="ec-item">
+          <img src="img/Hawii.jpg" alt="Hawaii state bird and flower" class="state-img">
+        </div>
+        <div class="ec-item">
+            <h2 class="title">Interested in a Commission?</h2>
+            <p class="desc">Email for info on pricing, examples, and terms of service.</p>
+            <div class="linky">
+                <a href="mailto:melissabryantid@gmail.com" target="_blank">
+                <div class="usa">
+                    <p class="title">Inquire Here</p>
+                </div>
+                </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class="eyecatch aurora">
+        <div class="ec-item">
+          <img src="img/acrylics/northernlights.jpg" alt="Northern lights" class="state-img">
+        </div>
+        <div class="ec-item">
+            <h2 class="title">Interested in a Commission?</h2>
+            <p class="desc">Email for info on pricing, examples, and terms of service.</p>
+            <div class="linky">
+                <a href="mailto:melissabryantid@gmail.com" target="_blank">
+                <div class="usa">
+                    <p class="title">Inquire Here</p>
+                </div>
+                </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class="eyecatch farm">
+        <div class="ec-item">
+          <img src="img/acrylics/lake.jpg" alt="Mountain Lake" class="state-img">
+        </div>
+        <div class="ec-item">
+            <h2 class="title">Interested in a Commission?</h2>
+            <p class="desc">Email for info on pricing, examples, and terms of service.</p>
+            <div class="linky">
+                <a href="mailto:melissabryantid@gmail.com" target="_blank">
+                <div class="usa">
+                    <p class="title">Inquire Here</p>
+                </div>
+                </a>
+        </div>
+      </div>
+      </div>
+    
+    </div>
+      <!-- eyeycatch end -->
+      <footer>
+        <nav>
+          <div class="foot">
+            <p>
+            <a href="https://www.instagram.com/melissa_bryant_id/" target="_blank" rel="noopener noreferrer" class="socialist">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=100070388983079" target="_blank" rel="noopener noreferrer" class="socialist">Facebook</a>
+          </p>
+          </div>
+        </nav>
+      </footer>
+  
+      <script>
+        // Function to hide all the divs with class "eyecatch"
+        function hideAllEyecatch() {
+          const eyecatchDivs = document.querySelectorAll('.eyecatch');
+          eyecatchDivs.forEach((div) => {
+            div.style.display = 'none';
+          });
+        }
       
-        // Define corresponding paragraphs here
-        var paragraphs = [
-          "This is Idaho",
-          "This is Connecticut",
-          "This is Florida"
-        ];
+        // Function to randomly show one of the divs with class "eyecatch"
+        function showRandomEyecatch() {
+          const eyecatchDivs = document.querySelectorAll('.eyecatch');
+          const randomIndex = Math.floor(Math.random() * eyecatchDivs.length);
+          eyecatchDivs[randomIndex].style.display = 'flex';
+        }
       
-        // This chooses a random number from all available image indices
-        var randomIndex = Math.floor(Math.random() * images.length);
-      
-        // Make the URL into a proper image tag
-        var image = "<img src='" + images[randomIndex] + "'>";
-      
-        // Get the corresponding paragraph
-        var paragraph = "<p>" + paragraphs[randomIndex] + "</p>";
-      
-        // Append the image and paragraph to the div
-        var container = document.getElementById("img-load");
-        container.innerHTML = image + paragraph;
+        // On page load, hide all the divs and then show a random one
+        window.onload = function () {
+          hideAllEyecatch();
+          showRandomEyecatch();
+        };
       </script>
-
-<!-- <script>
-    // define your images here
-var images = [
-  "img/Idaho.jpg",
-  "img/Connecticut.jpg",
-  "img/Florida.jpg"
-];
-
-// this chooses a random number from all available image indices
-var randomImage = images[Math.floor(Math.random() * images.length)];
-console.log(randomImage);
-// make the URL into a proper image tag
-var image = "<img src='" + randomImage + "'>";
-// append to the div
-document.getElementById("img-load").innerHTML = image;
-</script> -->
-
 </body>
 </html>
