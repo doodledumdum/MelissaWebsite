@@ -1,3 +1,8 @@
+/* * {
+  border-style: solid;
+  border-color: red;
+} */
+
 body {
     background-color: #DEE9FF;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -106,6 +111,20 @@ a:hover {
     /* text-decoration: none; */
   }
   
+  .header .title {
+    display: flex;
+    float: left;
+    padding: 1em;
+    font-weight: bold;
+    /* font-size: 2em; */
+    /* padding: 10px 20px; */
+    /* text-decoration: none; */
+  }
+
+  .navtext {
+    font-style: oblique;
+  }
+
   /* menu */
   
   .header .menu {
@@ -220,14 +239,76 @@ a:hover {
   }
 /* end nav baar   */
 
+/* h1 {
+  padding-top: 3em;
+} */
+
+/* eyecatch */
+.eyecatch {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1em;
+  align-content: space-between;
+}
+
+.ec-item {
+  /* background-color: rgb(9, 255, 0); */
+  max-width: 30em;
+  padding: 2em;
+  /* padding: 3em; */
+}
+
+.state-img {
+  max-width: 100%;
+}
+
+.eye {
+  max-width: 72%;
+  padding-top: 5em;
+}
+
+img {
+  max-width:100%;
+}
+/* eyecatch end */
+
+/* links */
+.linky {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1em;
+  gap: 3em;
+  align-items: center;
+  /* padding-top: 3em; */
+}
+
+.usa {
+  max-width: 30em;
+  text-align: center;
+  padding: 2em;
+  background-color: #ffffff88;
+}
+
+.labelle {
+  font-weight: bold;
+}
+
+.linky a:hover {
+  background-color: #fff4d4;
+}
+/* link end */
+
 /* foooter */
 .foot {
   background-color: #ffffff;
   box-shadow: 1px 1px 4px 0 rgba(111,58,82,.1);
-  width: 100%;
+  max-width: 100%;
   border-radius: 2px;
   margin: 0;
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   left: 0;
   padding: 1em;
@@ -239,7 +320,7 @@ a:hover {
 }
 
 .foot li a {
-  display: block;
+  /* display: block; */
   padding: 20px 20px;
   /* border-right: 1px solid #f4f4f4; */
   text-decoration: none;

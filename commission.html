@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melissa Bryant Commissions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <!-- Nav -->
+        <a href="index.html"><img src="img/MelissaBryantLogoColored.svg" class="logo" alt="Melissa Bryant's logo"></a>
+          <input aria-label="idk" class="menu-btn" type="checkbox" id="menu-btn" />
+          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <a href="index.html"><p class="title">The Art of Melissa Bryant</p></a>
+          <ul class="menu">
+            <li class="navtext"><a href="store.html">Store</a></li>
+            <li class="navtext"><a href="commission.html">Commissions</a></li>
+            <li class="navtext"><a href="collections.html">Collections</a></li>
+            <li class="navtext"><a href="contact.html">Contact</a></li>
+            <li class="navtext"><a href="about.html">About</a></li>
+           
+          </ul>
+        <!-- nav end -->
+    </header>
+
+ 
+
+    <!-- eyecatch -->
+<div class="eyecatch">
+    <div class="eye" id="img-load"></div>
+</div>
+    <!-- eyeycatch end -->
+
+    <footer>
+      <nav>
+        <div class="foot">
+          <p>
+          <a href="https://www.instagram.com/melissa_bryant_id/" target="_blank" rel="noopener noreferrer" class="socialist">Instagram</a>
+          <a href="https://www.facebook.com/profile.php?id=100070388983079" target="_blank" rel="noopener noreferrer" class="socialist">Facebook</a>
+        </p>
+        </div>
+      </nav>
+    </footer>
+    
+    <script>
+        // Define your images here
+        var images = [
+          "img/Idaho.jpg",
+          "img/Connecticut.jpg",
+          "img/Florida.jpg"
+        ];
+      
+        // Define corresponding paragraphs here
+        var paragraphs = [
+          "This is Idaho",
+          "This is Connecticut",
+          "This is Florida"
+        ];
+      
+        // This chooses a random number from all available image indices
+        var randomIndex = Math.floor(Math.random() * images.length);
+      
+        // Make the URL into a proper image tag
+        var image = "<img src='" + images[randomIndex] + "'>";
+      
+        // Get the corresponding paragraph
+        var paragraph = "<p>" + paragraphs[randomIndex] + "</p>";
+      
+        // Append the image and paragraph to the div
+        var container = document.getElementById("img-load");
+        container.innerHTML = image + paragraph;
+      </script>
+
+<!-- <script>
+    // define your images here
+var images = [
+  "img/Idaho.jpg",
+  "img/Connecticut.jpg",
+  "img/Florida.jpg"
+];
+
+// this chooses a random number from all available image indices
+var randomImage = images[Math.floor(Math.random() * images.length)];
+console.log(randomImage);
+// make the URL into a proper image tag
+var image = "<img src='" + randomImage + "'>";
+// append to the div
+document.getElementById("img-load").innerHTML = image;
+</script> -->
+
+</body>
+</html>
